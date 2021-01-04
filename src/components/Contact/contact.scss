@@ -1,0 +1,50 @@
+@import "../../common/color";
+
+#contact {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    ul {
+        display: flex;
+        font-size: 20px;
+        margin: 10px;
+        padding: 0;
+
+        li {
+            list-style: none;
+            background-color: $white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            margin: 5px;
+            cursor: pointer;
+
+            & > svg {
+                margin: auto;
+            }
+
+            &:hover {
+                color: $white;
+                transition: 0.25s;
+
+                &.phone {
+                    background-color: $green;
+                }
+
+                &.mail {
+                    background-color: $dark_blue;
+                }
+
+                &.linkedin {
+                    background-color: $linkedin_blue;
+                }
+
+                &.github {
+                    background-color: $github_black;
+                }
+            }
+        }
+    }
+}

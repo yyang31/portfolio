@@ -1,0 +1,21 @@
+@import "./common/color";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(215, 184, 224);
+    background: linear-gradient(
+        180deg,
+        rgba($purple, 1) 0%,
+        rgba($blue, 1) 100%
+    );
+    min-height: 100vh;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}

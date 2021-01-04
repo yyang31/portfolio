@@ -1,0 +1,60 @@
+@import "../../common/color";
+@import "../../common/grid";
+
+#navbar {
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        padding: 0 40px;
+        position: relative;
+        font-size: 20px;
+
+        &::after {
+            transition: 0.2s;
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 0;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &.active {
+            a {
+                color: $black;
+            }
+
+            &::after {
+                background-color: $black;
+                width: 70%;
+            }
+        }
+
+        &:not(.active):hover {
+            a {
+                transition: 0.2s;
+                color: $gray;
+            }
+
+            &::after {
+                background-color: rgba($gray, 0.8);
+                width: 70%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
+        @media only screen and (max-width: $md) {
+            padding: 0 20px;
+        }
+    }
+}

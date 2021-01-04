@@ -1,0 +1,95 @@
+@import "../../common/color";
+@import "../../common/grid";
+
+#home {
+    display: flex;
+    justify-content: center;
+
+    .portfile-pic {
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 15px;
+        margin: 50px;
+        background-color: rgba($white, 0.1);
+        flex-shrink: 0;
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .name {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        font-size: 100px;
+        font-weight: bold;
+        color: $white;
+        text-align: right;
+        margin-left: 100px;
+
+        & > span {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .background-text {
+            font-size: 130px;
+            color: $transparent_white;
+            position: absolute;
+            top: -50px;
+            right: -15px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xl) {
+    #home {
+        flex-flow: column;
+
+        .portfile-pic {
+            margin: auto;
+        }
+
+        .name {
+            margin: auto;
+            text-align: center;
+            font-size: 70px;
+
+            & > span {
+                margin: 10px 0;
+            }
+
+            .background-text {
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                right: auto;
+                font-size: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $sm) {
+    #home {
+        .portfile-pic {
+            width: 280px;
+            height: 280px;
+        }
+
+        .name {
+            font-size: 50px;
+
+            .background-text {
+                top: -20px;
+                font-size: 70px;
+            }
+        }
+    }
+}
