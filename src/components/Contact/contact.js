@@ -7,17 +7,37 @@ const Contact = () => {
     return (
         <div id="contact">
             <ul>
-                <li className="phone">
-                    <FaPhoneAlt />
+                <li>
+                    <a class="icon-wrap phone" href="tel:951-500-6991">
+                        <FaPhoneAlt />
+                    </a>
                 </li>
-                <li className="mail">
-                    <IoMdMail />
+                <li>
+                    <a
+                        class="icon-wrap mail"
+                        href="mailto:stanley316868@gmail.com"
+                        target="blank"
+                    >
+                        <IoMdMail />
+                    </a>
                 </li>
-                <li className="linkedin">
-                    <FaLinkedinIn />
+                <li>
+                    <a
+                        class="icon-wrap linkedin"
+                        href="https://www.linkedin.com/in/youwei-yang-a49701156/"
+                        target="blank"
+                    >
+                        <FaLinkedinIn />
+                    </a>
                 </li>
-                <li className="github">
-                    <FaGithubAlt />
+                <li>
+                    <a
+                        class="icon-wrap github"
+                        href="https://github.com/yyang31"
+                        target="blank"
+                    >
+                        <FaGithubAlt />
+                    </a>
                 </li>
             </ul>
         </div>

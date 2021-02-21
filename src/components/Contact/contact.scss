@@ -13,36 +13,40 @@
 
         li {
             list-style: none;
-            background-color: $white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
             margin: 5px;
-            cursor: pointer;
 
-            & > svg {
-                margin: auto;
-            }
+            .icon-wrap {
+                border-radius: 50%;
+                display: flex;
+                width: 50px;
+                height: 50px;
+                color: $black;
+                background-color: $white;
+                cursor: pointer;
 
-            &:hover {
-                color: $white;
-                transition: 0.25s;
-
-                &.phone {
-                    background-color: $green;
+                & > svg {
+                    margin: auto;
                 }
 
-                &.mail {
-                    background-color: $dark_blue;
-                }
+                &:hover {
+                    color: $white;
+                    transition: 0.25s;
 
-                &.linkedin {
-                    background-color: $linkedin_blue;
-                }
+                    &.phone {
+                        background-color: $green;
+                    }
 
-                &.github {
-                    background-color: $github_black;
+                    &.mail {
+                        background-color: $dark_blue;
+                    }
+
+                    &.linkedin {
+                        background-color: $linkedin_blue;
+                    }
+
+                    &.github {
+                        background-color: $github_black;
+                    }
                 }
             }
         }
