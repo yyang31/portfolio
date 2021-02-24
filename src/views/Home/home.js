@@ -1,11 +1,10 @@
 import "./home.scss";
-import portfile_pic from "../../assets/portfile_pic.jpg";
 
 function Home() {
     return (
         <div id="home">
             <div className="portfile-pic">
-                <img src={portfile_pic} alt="portfile picture" />
+                <img src="/images/portfile_pic.jpg" alt="portfile picture" />
             </div>
             <div className="name">
                 <span className="first-name">

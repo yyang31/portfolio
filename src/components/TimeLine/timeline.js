@@ -6,7 +6,10 @@ class TimeLineItem extends React.Component {
         return (
             <div className="time-line-item">
                 <div className="logo">
-                    <img src={this.props.item.logoPath} />
+                    <img
+                        src={this.props.item.logoPath}
+                        alt={this.props.item.name}
+                    />
                 </div>
                 <div className="body">
                     <div className="name">
