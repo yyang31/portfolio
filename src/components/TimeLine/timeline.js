@@ -18,10 +18,21 @@ class TimeLineItem extends React.Component {
                             {this.props.item.name}
                         </span>
                     </div>
-                    <div className="date">{this.props.item.date}</div>
-                    <div className="description">
-                        {this.props.item.description}
-                    </div>
+                    {this.props.item.entries.map(function (entry, i) {
+                        return (
+                            <div className="entry" key={i}>
+                                {entry.name ? (
+                                    <div className="entry-name">
+                                        {entry.name}
+                                    </div>
+                                ) : null}
+                                <div className="date">{entry.date}</div>
+                                <div className="description">
+                                    {entry.description}
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         );
@@ -29,10 +40,6 @@ class TimeLineItem extends React.Component {
 }
 
 class TimeLine extends React.Component {
-    constructor() {
-        super();
-    }
-
     render() {
         return (
             <div className="time-line">

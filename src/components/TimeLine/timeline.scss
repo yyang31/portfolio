@@ -66,6 +66,15 @@
             }
         }
 
+        .entry {
+            margin-top: 20px;
+        }
+
+        .entry-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
         .date {
             font-size: 15px;
             margin: 10px 0;
@@ -73,6 +82,7 @@
 
         .description {
             font-size: 20px;
+            white-space: pre-line;
         }
     }
 }

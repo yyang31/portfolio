@@ -4,7 +4,7 @@ function Home() {
     return (
         <div id="home">
             <div className="portfile-pic">
-                <img src="/images/portfile_pic.jpg" alt="portfile picture" />
+                <img src="/images/portfile_pic.jpg" alt="portfile" />
             </div>
             <div className="name">
                 <span className="first-name">
