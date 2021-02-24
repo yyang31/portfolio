@@ -8,13 +8,13 @@ const Contact = () => {
         <div id="contact">
             <ul>
                 <li>
-                    <a class="icon-wrap phone" href="tel:951-500-6991">
+                    <a className="icon-wrap phone" href="tel:951-500-6991">
                         <FaPhoneAlt />
                     </a>
                 </li>
                 <li>
                     <a
-                        class="icon-wrap mail"
+                        className="icon-wrap mail"
                         href="mailto:stanley316868@gmail.com"
                         target="blank"
                     >
@@ -23,7 +23,7 @@ const Contact = () => {
                 </li>
                 <li>
                     <a
-                        class="icon-wrap linkedin"
+                        className="icon-wrap linkedin"
                         href="https://www.linkedin.com/in/youwei-yang-a49701156/"
                         target="blank"
                     >
@@ -32,7 +32,7 @@ const Contact = () => {
                 </li>
                 <li>
                     <a
-                        class="icon-wrap github"
+                        className="icon-wrap github"
                         href="https://github.com/yyang31"
                         target="blank"
                     >

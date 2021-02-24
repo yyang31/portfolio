@@ -10,11 +10,11 @@ function Home() {
             <div className="name">
                 <span className="first-name">
                     Youwei
-                    <span class="background-text">Stanley</span>
+                    <span className="background-text">Stanley</span>
                 </span>
                 <span className="last-name">
                     Yang
-                    <span class="background-text">Yang</span>
+                    <span className="background-text">Yang</span>
                 </span>
             </div>
         </div>
