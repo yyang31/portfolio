@@ -14,7 +14,7 @@ class Experience extends React.Component {
                             name: "Software Engineer",
                             date: "Nov 2020 – Present",
                             description:
-                                "- Develop Ansible roles to automate machine learning experience and model promotion.\n- Develop Python library to simplify data science workflow",
+                                "- Develop Ansible roles to automate data scientist and machine learning engineer's end-to-end workflow.\n- Develop Python library to accelerate and simplify machine learning experiments",
                         },
                         {
                             name: "Software Engineer",

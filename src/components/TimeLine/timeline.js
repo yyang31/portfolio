@@ -1,5 +1,37 @@
 import React from "react";
+import { FaGithubAlt } from "react-icons/fa";
+import { BiLink } from "react-icons/bi";
 import "./timeline.scss";
+
+class TimeLineLink extends React.Component {
+    render() {
+        return (
+            <div className="time-line-link">
+                {this.props.links.map(function (link, i) {
+                    return link.type === "github" ? (
+                        <a
+                            className="github"
+                            key={i}
+                            href={link.url}
+                            target="blank"
+                        >
+                            <FaGithubAlt />
+                        </a>
+                    ) : (
+                        <a
+                            className="hyperlink"
+                            key={i}
+                            href={link.url}
+                            target="blank"
+                        >
+                            <BiLink />
+                        </a>
+                    );
+                })}
+            </div>
+        );
+    }
+}
 
 class TimeLineItem extends React.Component {
     render() {
@@ -13,6 +45,12 @@ class TimeLineItem extends React.Component {
                 </div>
                 <div className="body">
                     <div className="name">
+                        <div className="mobile-logo">
+                            <img
+                                src={this.props.item.logoPath}
+                                alt={this.props.item.name}
+                            />
+                        </div>
                         <span>{this.props.item.name}</span>
                         <span className="background-text">
                             {this.props.item.name}
@@ -30,6 +68,9 @@ class TimeLineItem extends React.Component {
                                 <div className="description">
                                     {entry.description}
                                 </div>
+                                {entry.links ? (
+                                    <TimeLineLink links={entry.links} />
+                                ) : null}
                             </div>
                         );
                     })}
