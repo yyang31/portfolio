@@ -25,7 +25,7 @@ class Experience extends React.Component {
                     ],
                 },
                 {
-                    logoPath: "/images/fifthsun_logo.jpeg",
+                    logoPath: "/images/fifthsun_logo.jpg",
                     name: "Fifth Sun",
                     entries: [
                         {
