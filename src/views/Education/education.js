@@ -42,7 +42,7 @@ class Education extends React.Component {
     }
 
     render() {
-        return <TimeLine items={this.state.educationList} />;
+        return <TimeLine items={this.state.educationList} title="education" />;
     }
 }
 

@@ -43,6 +43,14 @@ class TimeLine extends React.Component {
     render() {
         return (
             <div className="time-line">
+                {this.props.title ? (
+                    <div className="title">
+                        {this.props.title}
+                        <span className="background-text">
+                            {this.props.title}
+                        </span>
+                    </div>
+                ) : null}
                 {this.props.items.map(function (item, i) {
                     return <TimeLineItem item={item} key={i} />;
                 })}

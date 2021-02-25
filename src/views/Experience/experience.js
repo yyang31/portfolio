@@ -53,7 +53,9 @@ class Experience extends React.Component {
     }
 
     render() {
-        return <TimeLine items={this.state.experienceList} />;
+        return (
+            <TimeLine items={this.state.experienceList} title="experience" />
+        );
     }
 }
 
