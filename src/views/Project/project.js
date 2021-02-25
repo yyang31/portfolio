@@ -21,7 +21,7 @@ class Project extends React.Component {
                                 },
                                 {
                                     type: "hyperlink",
-                                    ulr: "https://www.chewsr.net/",
+                                    url: "https://www.chewsr.net/",
                                 },
                             ],
                         },
